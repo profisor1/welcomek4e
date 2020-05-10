@@ -93,7 +93,7 @@ client.on("message", message => {
   if (message.author.bot) return; ///Pixel Team
   if (message.content.startsWith("bsrawa")) {
     if (!message.channel.guild)
-      return message.reply(`** This Command For Servers Only**`);
+      return message.reply(`هــەتــیــوو تــۆ زۆر کــەرۍ`);
     if (!message.member.hasPermission("MANAGE_GUILD"))
       return message.channel.send(`** You don't have Premissions!**`);
     if (!message.guild.member(client.user).hasPermission("MANAGE_GUILD"))
@@ -118,7 +118,7 @@ client.on("message", message => {
 client.on("message", function(msg) {
   if (msg.content.startsWith("server")) {
     if (!msg.channel.guild)
-      return msg.reply("**❌ اسف لكن هذا الامر للاداره فقط**");
+      return msg.reply("هــەتــیــوو تــۆ زۆر کــەرۍ");
     let embed = new Discord.RichEmbed()
       .setColor("RANDOM")
       .setThumbnail(msg.guild.iconURL)
@@ -165,7 +165,7 @@ client.on("message", message => {
   if (message.content === "daixa") {
     if (!message.channel.guild) return;
     if (!message.member.hasPermission("ADMINISTRATOR"))
-      return message.reply("انت لا تمتلك الصلاحية");
+      return message.reply("هــەتــیــوو تــۆ زۆر کــەرۍ");
     message.channel.overwritePermissions(message.guild.id, {
       READ_MESSAGES: false
     });
@@ -177,7 +177,7 @@ client.on("message", message => {
   if (message.content === "bikawa") {
     if (!message.channel.guild) return;
     if (!message.member.hasPermission("ADMINISTRATOR"))
-      return message.reply("انت لا تمتلك الصلاحية");
+      return message.reply("هــەتــیــوو تــۆ زۆر کــەرۍ");
     message.channel.overwritePermissions(message.guild.id, {
       READ_MESSAGES: null
     });
@@ -203,4 +203,4 @@ client.on("ready", () => {
     .catch(console.error);
 });
 
-client.login("Njk0OTUzNzgyNjkzNDYyMDc4.XpsuJg.qVYWU88QQEbbArn-WTOBcCafpfw");
+client.login("Njk0OTUzNzgyNjkzNDYyMDc4.Xrg6WA.19sZ_IuJdtGztDD9Yq-0Ie4-ZmM");
